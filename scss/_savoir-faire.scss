@@ -1,0 +1,22 @@
+#savoir-faire {
+    height: 75vh;
+    justify-content: space-evenly;
+
+    .citation {
+        gap: 10px;
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .introduction {
+        border: 1px solid $black;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 15px;
+        line-height: 17px;
+
+
+    }
+}

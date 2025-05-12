@@ -30,7 +30,7 @@ body {
 
     h1 {
         font-size: 1.8rem;
-        background-color: rgba(255, 255, 255, 0.848);
+        background-color: rgba(255, 255, 255, 0.9);
         width: 70%;
         padding: 30px 20px;
     }
@@ -44,5 +44,18 @@ body {
         font-size: 0.8rem;
         font-family: $link;
         cursor: pointer;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
