@@ -52,6 +52,7 @@ body section article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 18px;
 }
 
 header {
@@ -102,5 +103,30 @@ header nav ul li a:hover {
   font-size: 0.9rem;
   text-align: center;
   padding: 15px;
-  line-height: 17px;
+}
+
+#products {
+  background-color: #AB864C;
+  color: #ffffff;
+  padding: 20% 0;
+  gap: 35px;
+}
+#products .products_title {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+#products .products_item {
+  height: 70vh;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+#products .products_item img {
+  width: 75%;
+}
+#products .products_item .products_item_title {
+  font-size: 1.2rem;
+}
+#products .products_item .products_item_description {
+  font-size: 1.3em;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

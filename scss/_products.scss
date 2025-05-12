@@ -1,0 +1,30 @@
+#products {
+    background-color: $brown;
+    color: $white;
+    padding: 20% 0;
+    gap: 35px;
+
+    .products_title {
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
+
+    .products_item {
+        height: 70vh;
+        justify-content: space-between;
+        padding: 0 15px;
+
+        img {
+            width: 75%;
+        }
+
+        .products_item_title {
+            font-size: 1.2rem;
+        }
+
+        .products_item_description {
+            font-size: 1.3em;
+            text-align: center;
+        }
+    }
+} 
