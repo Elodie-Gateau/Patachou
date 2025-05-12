@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins-Light;
+  src: url(/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: Kaisei_Decol;
+  src: url(/fonts/Kaisei_Decol/KaiseiDecol-Medium.ttf);
+}
+body {
+  font-family: Poppins-Light, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+}
+body h1, body h2, body h3 {
+  font-family: Kaisei_Decol, serif;
+  text-align: center;
+}
+body h1 {
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.848);
+  width: 70%;
+  padding: 30px 20px;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+}
+
+header {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 0px 7px #000000;
+}
+header img {
+  width: 30%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+header nav ul li a {
+  text-transform: uppercase;
+  color: #000000;
+}
+header nav ul li a:hover {
+  color: #AB864C;
+}
+
+.hero {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/haute-couture-2.jpg) center/cover no-repeat;
+}/*# sourceMappingURL=main.css.map */

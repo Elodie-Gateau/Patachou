@@ -1,0 +1,48 @@
+// Import des polices
+
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(/fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Kaisei_Decol;
+    src: url(/fonts/Kaisei_Decol/KaiseiDecol-Medium.ttf);
+}
+
+
+body {
+    font-family: $main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+
+    h1, h2, h3 {
+        font-family: $title;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        background-color: rgba(255, 255, 255, 0.848);
+        width: 70%;
+        padding: 30px 20px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-family: $link;
+        cursor: pointer;
+    }
+}

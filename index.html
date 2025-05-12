@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patachou</title>
+    <script
+      src="https://kit.fontawesome.com/dd4cb0f64d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <img src="/images/logo.svg" alt="Logo de la pâtisserie Patachou." />
+
+      <!-- Barre de navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#presentation">Notre savoir-faire</a></li>
+          <li><a href="#products">Nos pâtisseries</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="hero_title">Pâtisseries Haute Couture</h1>
+    </section>
+
+    <!-- Notre savoir-faire -->
+    <section id="presentation">
+      <!-- Citation -->
+      <article class="citation">
+        <h2 class="citation_title">
+          "De toutes les passions, la seule vraiment respectable me parait être
+          la gourmandise."
+        </h2>
+        <h3 class="citation_author">Guy de Maupassant</h3>
+      </article>
+
+      <!-- Présentation -->
+      <article class="introduction">
+        <p class="introduction_content">
+          Nos délicieux gâteaux sont confectionnés avec soin de manière
+          artisanale, en utilisant des ingrédients bruts issus de l’agriculture
+          biologique, tout en respectant rigoureusement les saisons. Sans
+          conservateurs, sans colorants ni d’arômes artificiels, nos créations
+          mettent en avant la pureté des saveurs.
+        </p>
+      </article>
+    </section>
+
+    <!-- Products items -->
+    <section id="products">
+      <h2 class="products_title">Nos pâtisseries Signature</h2>
+      <article class="products_item">
+        <img
+          src="images/irresistible.jpg"
+          alt="Photo de la pâtisserie l'irrésistible"
+        />
+        <h3 class="products_item_title">L'irrésistible</h3>
+        <p class="products_item_description">
+          Le chou doré, légèrement croustillant, est garni d'une crème onctueuse
+          à la pistache, dévoilant des saveurs subtiles et raffinées. Saupoudrée
+          de pistaches concassées, la pâtisserie est sublimée par un équilibre
+          parfait entre douceur fondante et touche croquante.
+        </p>
+      </article>
+      <article class="products_item">
+        <img src="images/delicat.jpg" alt="Photo de la pâtisserie le délicat" />
+        <h3 class="products_item_title">Le délicat</h3>
+        <p class="products_item_description">
+          La pâte feuilletée légère et dorée est imprégnée d'une délicate crème
+          parfumée à la rose, laissant s’épanouir des arômes floraux subtils et
+          envoûtants. Saupoudrée de pétales de rose, la pâtisserie est magnifiée
+          par un équilibre entre douceur fondante et fraîcheur florale.
+        </p>
+      </article>
+      <article class="products_item">
+        <img
+          src="images/impetueux.jpg"
+          alt="Photo de la pâtisserie l'impétueux"
+        />
+        <h3 class="products_item_title">L’impétueux</h3>
+        <p class="products_item_description">
+          La pâte moelleuse est enrobée d'une ganache intense au chocolat noir,
+          révélant des notes profondes et corsées à chaque bouchée. Sublimé par
+          une fine couche de cacao amer, le dessert est magnifié par un
+          contraste parfait entre l'onctuosité du chocolat et une légère
+          amertume.
+        </p>
+      </article>
+      <a href="#">Découvrir toutes nos délicieuses pâtisseries</a>
+    </section>
+
+    <!-- History -->
+    <section class="history">
+      <h2 class="history_title">Patachou, toute une histoire…</h2>
+      <p class="history_description">
+        Une petite pâtisserie familiale, fondée il y a plusieurs décennies, se
+        transmet de génération en génération, préservant l'artisanat
+        traditionnel et les recettes secrètes. Connue pour ses créations uniques
+        et raffinées, elle devient au fil du temps un lieu incontournable pour
+        les amateurs de douceurs. Malgré les défis modernes, la passion et le
+        savoir-faire continuent de faire vivre cette enseigne, où chaque
+        pâtisserie raconte une histoire d'amour du métier
+      </p>
+      <a href="#">Notre histoire</a>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section class="contactform">
+      <h2 class="contactform_title">Des gâteaux pour votre événement ?</h2>
+      <p class="contactform_description">
+        Pour vos événements exclusifs – anniversaire, séminaire d’entreprise ou
+        réception privée – offrez à vos invités une sélection raffinée de
+        pâtisseries, biscuits, mignardises et tartes, soigneusement élaborés
+        pour sublimer chaque moment !
+      </p>
+      <form action="#">
+        <p class="name">Votre nom et prénom</p>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" />
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" />
+
+        <label for="email">Votre email</label>
+        <input type="email" id="email" />
+
+        <label for="message">Votre message</label>
+        <textarea id="message"></textarea>
+
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox"
+          >J'ai lu et j'accepte la politique de confidentialité</label
+        >
+
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <!-- Localisation -->
+    <section class="location">
+      <h2 class="location_title">Notre atelier et notre boutique</h2>
+      <address class="location_adress">
+        14 Boulevard Yvonne Poirel 49000 ANGERS
+      </address>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.473966235629!2d-0.5644699235639072!3d47.46119259800714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ba132ff4e7%3A0xc11116e4d0e11bae!2s14%20Bd%20Yvonne%20Poirel%2C%2049000%20Angers!5e0!3m2!1sfr!2sfr!4v1747036517586!5m2!1sfr!2sfr"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Contact -->
+      <section class="footercontact">
+        <img src="images/logo.svg" alt="Logo de la pâtisserie Patachou." />
+        <nav class="footercontact_nav">
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#presentation">Notre savoir-faire</a></li>
+            <li><a href="#products">Nos pâtisseries</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="footercontact_phone">02 40 50 40 50</p>
+        <address class="footercontact_address">
+          14 Bd Yvonne Poirel <br />
+          49000 ANGERS
+        </address>
+        <h4 class="footercontact_openinghours_title">HORAIRES D’OUVERTURES</h4>
+        <p class="footercontact_openinghours_content">
+          Mardi au vendredi : 11h – 19h <br />Samedi : 10h30 – 19h
+        </p>
+        <p class="footercontact_reseaux">Suivez-nous</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </section>
+
+      <!-- Mentions légales -->
+      <section class="mentions">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </section>
+    </footer>
+  </body>
+</html>
