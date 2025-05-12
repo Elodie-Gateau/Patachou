@@ -138,4 +138,35 @@ header nav ul li a:hover {
   font-family: Poppins-Light, sans-serif;
   font-size: 1.3em;
   padding: 12px;
+}
+
+.history {
+  padding: 20% 20px;
+}
+.history img:nth-child(1) {
+  width: 50%;
+  padding: 30px 0;
+}
+.history img:nth-child(2) {
+  width: 12%;
+}
+.history .history_title {
+  font-size: 2.1rem;
+  line-height: 45px;
+  padding-bottom: 10%;
+}
+.history .history_description {
+  font-size: 0.87rem;
+  line-height: 18px;
+  padding-bottom: 20px;
+}
+.history a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #AB864C;
+  border: 1px solid #ffffff;
+  font-family: Poppins-Light, sans-serif;
+  font-size: 1.3em;
+  padding: 12px;
+  align-self: flex-start;
 }/*# sourceMappingURL=main.css.map */
