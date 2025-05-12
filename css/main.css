@@ -129,4 +129,13 @@ header nav ul li a:hover {
 #products .products_item .products_item_description {
   font-size: 1.3em;
   text-align: center;
+}
+#products a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #AB864C;
+  border: 1px solid #ffffff;
+  font-family: Poppins-Light, sans-serif;
+  font-size: 1.3em;
+  padding: 12px;
 }/*# sourceMappingURL=main.css.map */
