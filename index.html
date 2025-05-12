@@ -119,7 +119,10 @@
 
     <!-- Formulaire de contact -->
     <section class="contactform">
-      <h2 class="contactform_title">Des gâteaux pour votre événement ?</h2>
+      <hr />
+      <h2 class="contactform_title">
+        Des gâteaux <span>pour votre événement&nbsp;?</span>
+      </h2>
       <p class="contactform_description">
         Pour vos événements exclusifs – anniversaire, séminaire d’entreprise ou
         réception privée – offrez à vos invités une sélection raffinée de
@@ -127,11 +130,13 @@
         pour sublimer chaque moment !
       </p>
       <form action="#">
-        <p class="name">Votre nom et prénom</p>
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" />
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" />
+        <div class="name">
+          <p class="name_title">Votre nom et prénom</p>
+          <input type="text" id="prenom" />
+          <input type="text" id="nom" />
+          <label for="prenom">Prénom</label>
+          <label for="nom">Nom</label>
+        </div>
 
         <label for="email">Votre email</label>
         <input type="email" id="email" />
@@ -139,10 +144,12 @@
         <label for="message">Votre message</label>
         <textarea id="message"></textarea>
 
-        <input type="checkbox" id="checkbox" />
-        <label for="checkbox"
-          >J'ai lu et j'accepte la politique de confidentialité</label
-        >
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"
+            >J'ai lu et j'accepte la politique de confidentialité</label
+          >
+        </div>
 
         <input type="submit" value="Envoyer" />
       </form>
