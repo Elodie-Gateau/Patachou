@@ -1,5 +1,16 @@
 .hero {
-    height: 45vh;
-    justify-content: center;
-    background: url(/images/haute-couture-2.jpg) center/cover no-repeat;
+  height: 45vh;
+  justify-content: center;
+  background: url(/images/haute-couture-2.jpg) center/cover no-repeat;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 8% 0;
+    .hero_title {
+      font-size: 2.5rem;
+      line-height: 1.3;
+    }
+  }
 }

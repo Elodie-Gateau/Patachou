@@ -23,7 +23,9 @@ body {
   align-items: center;
   font-size: 0.7rem;
 }
-body h1, body h2, body h3 {
+body h1,
+body h2,
+body h3 {
   font-family: Kaisei_Decol, serif;
   text-align: center;
 }
@@ -32,6 +34,9 @@ body h1 {
   background-color: rgba(255, 255, 255, 0.9);
   width: 70%;
   padding: 30px 20px;
+}
+body span {
+  display: block;
 }
 body li {
   list-style: none;
@@ -58,8 +63,27 @@ body address {
   font-style: normal;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1rem;
+  }
+  body h1 {
+    font-size: 3rem;
+  }
+  body a {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  body h1 {
+    width: 50%;
+  }
+  body a {
+    font-size: 1rem;
+  }
+}
 header {
-  height: 30vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,6 +91,8 @@ header {
   align-items: center;
   gap: 15px;
   box-shadow: 0 0px 7px #000000;
+  z-index: 10;
+  padding: 20px;
 }
 header img {
   width: 30%;
@@ -82,22 +108,59 @@ header nav ul li a {
   color: #000000;
 }
 header nav ul li a:hover {
-  color: #AB864C;
+  color: #ab864c;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header img {
+    width: 15%;
+  }
+  header nav ul {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header img {
+    width: 10%;
+  }
+  header nav ul {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+}
 .hero {
   height: 45vh;
   justify-content: center;
   background: url(/images/haute-couture-2.jpg) center/cover no-repeat;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 8% 0;
+  }
+  .hero .hero_title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+}
 #savoir-faire {
-  height: 75vh;
-  justify-content: space-evenly;
+  height: auto;
+  padding: 20% 0;
 }
 #savoir-faire .citation {
   gap: 10px;
   line-height: 1.3;
+  padding-bottom: 20%;
 }
 #savoir-faire .citation h2 {
   font-size: 1.4rem;
@@ -109,26 +172,58 @@ header nav ul li a:hover {
   padding: 15px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  #savoir-faire {
+    padding: 10% 0;
+  }
+  #savoir-faire .citation {
+    padding-bottom: 10%;
+  }
+  #savoir-faire .citation .citation_title {
+    font-size: 1.5rem;
+  }
+  #savoir-faire .introduction {
+    margin: 0 5%;
+  }
+  #savoir-faire .introduction .introduction_content {
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 20px 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #savoir-faire {
+    padding: 8% 0;
+  }
+  #savoir-faire .citation {
+    padding-bottom: 8%;
+  }
+  #savoir-faire .introduction {
+    width: 60%;
+  }
+  #savoir-faire .introduction .introduction_content {
+    padding: 20px 5%;
+  }
+}
 #products {
-  background-color: #AB864C;
+  background-color: #ab864c;
   color: #ffffff;
   padding: 20% 0;
-  gap: 35px;
 }
 #products .products_title {
   font-size: 1.5rem;
   padding-bottom: 15px;
 }
 #products .products_item {
-  height: 70vh;
-  justify-content: space-between;
-  padding: 0 15px;
+  height: auto;
+  padding: 10% 15px;
 }
 #products .products_item img {
   width: 75%;
 }
 #products .products_item .products_item_title {
   font-size: 1.2rem;
+  padding: 20% 0;
 }
 #products .products_item .products_item_description {
   font-size: 1.3em;
@@ -137,13 +232,77 @@ header nav ul li a:hover {
 #products a {
   display: inline-block;
   color: #ffffff;
-  background-color: #AB864C;
+  background-color: #ab864c;
   border: 1px solid #ffffff;
   font-family: Poppins-Light, sans-serif;
-  font-size: 1.3em;
+  font-size: 0.87rem;
   padding: 12px;
+  text-align: center;
+  margin: 5% 10%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #products a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  #products a {
+    padding: 12px;
+  }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  #products {
+    padding: 10% 0;
+  }
+  #products .products_title {
+    font-size: 2.2rem;
+    padding-bottom: 5%;
+  }
+  #products .products_item {
+    height: auto;
+    padding: 20px 15px;
+  }
+  #products .products_item img {
+    width: 30%;
+  }
+  #products .products_item .products_item_title {
+    font-size: 1.5rem;
+    padding: 10%;
+  }
+  #products .products_item .products_item_description {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #products {
+    padding: 8% 0;
+  }
+  #products .products_title {
+    font-size: 2.2rem;
+    padding-bottom: 0;
+  }
+  #products .products_list {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  #products a {
+    margin: 0;
+  }
+  #products .products_item {
+    height: auto;
+    padding: 8% 15px;
+  }
+  #products .products_item img {
+    width: 75%;
+    height: 45%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 .history {
   padding: 20% 20px;
 }
@@ -151,46 +310,89 @@ header nav ul li a:hover {
   width: 50%;
   padding: 30px 0;
 }
-.history img:nth-child(2) {
+.history .history_quotation img {
   width: 12%;
 }
-.history .history_title {
+.history .history_quotation .history_title {
   font-size: 2.1rem;
   line-height: 45px;
   padding-bottom: 10%;
 }
-.history .history_description {
+.history .history_quotation .history_description {
   font-size: 0.87rem;
   line-height: 18px;
   padding-bottom: 20px;
 }
-.history a {
+.history .history_quotation a {
   display: inline-block;
   color: #ffffff;
-  background-color: #AB864C;
+  background-color: #ab864c;
   border: 1px solid #ffffff;
   font-family: Poppins-Light, sans-serif;
-  font-size: 1.3em;
+  font-size: 0.87rem;
   padding: 12px;
+  text-align: center;
   align-self: flex-start;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .history .history_quotation a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .history .history_quotation a {
+    padding: 12px;
+  }
+}
 
+@media (min-width: 768px) {
+  .history {
+    padding: 10% 20px;
+  }
+  .history .history_quotation img {
+    align-self: flex-start;
+    width: 3rem;
+    padding-bottom: 15px;
+  }
+  .history .history_quotation .history_title {
+    align-self: flex-start;
+    padding-bottom: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .history {
+    flex-direction: row;
+    padding: 10%;
+  }
+  .history img:nth-child(1) {
+    width: 40%;
+    padding: 0 30px;
+  }
+  .history .history_quotation {
+    display: flex;
+    flex-direction: column;
+  }
+  .history .history_quotation img {
+    width: 8%;
+    padding: 15px 0;
+  }
+  .history .history_quotation .history_title {
+    text-align: left;
+    padding-bottom: 5%;
+  }
+}
 .contactform {
-  height: 100vh;
+  height: auto;
   padding: 0 20px;
-  margin-bottom: 40px;
 }
 .contactform hr {
   border: 0.25px solid #000000;
-  width: 90%;
+  width: 85%;
   margin-bottom: 15%;
 }
 .contactform .contactform_title {
   font-size: 1.5rem;
   line-height: 30px;
-}
-.contactform .contactform_title span {
-  display: block;
 }
 .contactform .contactform_description {
   font-size: 0.87rem;
@@ -252,18 +454,63 @@ header nav ul li a:hover {
 .contactform form input[type=submit] {
   display: inline-block;
   color: #ffffff;
-  background-color: #AB864C;
+  background-color: #ab864c;
   border: 1px solid #ffffff;
   font-family: Poppins-Light, sans-serif;
-  font-size: 1.3em;
+  font-size: 0.87rem;
   padding: 12px;
+  text-align: center;
   width: 100%;
   margin: 30px 0;
   height: auto;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contactform form input[type=submit] {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .contactform form input[type=submit] {
+    padding: 12px;
+  }
+}
 
+@media (min-width: 768px) {
+  .contactform {
+    padding: 0 20px 10% 20px;
+  }
+  .contactform .contactform_title {
+    align-self: flex-start;
+    text-align: left;
+    font-size: 2.2rem;
+    line-height: 1.4;
+  }
+  .contactform .contactform_description {
+    font-size: 0.87rem;
+    line-height: 18px;
+    padding: 5% 0;
+  }
+}
+@media (min-width: 1024px) {
+  .contactform {
+    padding-bottom: 0;
+  }
+  .contactform hr {
+    margin-bottom: 5%;
+  }
+  .contactform .contactform_content {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+  .contactform .contactform_content .contactform_text,
+  .contactform .contactform_content form {
+    width: 50%;
+  }
+}
 .location {
-  background: #AB864C;
+  background: #ab864c;
   color: #ffffff;
 }
 .location .location_title {
@@ -278,6 +525,15 @@ header nav ul li a:hover {
   padding: 40px 0;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .location .location_title {
+    font-size: 3rem;
+  }
+  .location .location_address {
+    font-size: 1.1rem;
+    line-height: 22px;
+  }
+}
 footer {
   background: #000000;
   width: 100%;
@@ -298,7 +554,7 @@ footer .footercontact nav ul li a {
   line-height: 10px;
 }
 footer .footercontact nav ul li a:hover {
-  color: #AB864C;
+  color: #ab864c;
 }
 footer .footercontact div {
   display: flex;
@@ -309,11 +565,45 @@ footer .footercontact span i {
   font-size: 1.5rem;
 }
 footer .mentions {
-  border: 1px solid #AB864C;
+  border: 1px solid #ab864c;
   gap: 10px;
   padding: 10px 0;
 }
 footer .mentions a {
   color: #ffffff;
   font-family: Poppins-Light, sans-serif;
+}
+
+@media (min-width: 768px) {
+  footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.2;
+  }
+  footer .footercontact {
+    padding: 10% 0;
+    gap: 20px;
+  }
+  footer .footercontact img {
+    width: 12%;
+  }
+  footer .footercontact .footercontact_reseaux {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .mentions a {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  footer section {
+    justify-content: space-around;
+  }
+  footer .footercontact {
+    padding: 5% 10%;
+    gap: 5%;
+  }
 }/*# sourceMappingURL=main.css.map */

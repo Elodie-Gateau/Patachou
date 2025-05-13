@@ -1,10 +1,18 @@
 @mixin button {
-    display: inline-block;
-    color: $white;
-    background-color: $brown;
-    border: 1px solid $white;
-    font-family: $main;
-    font-size: 1.3em;
-    padding: 12px;
+  display: inline-block;
+  color: $white;
+  background-color: $brown;
+  border: 1px solid $white;
+  font-family: $main;
+  font-size: $font-s;
+  padding: 12px;
+  text-align: center;
 
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 12px;
+  }
 }

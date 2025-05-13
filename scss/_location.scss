@@ -1,18 +1,30 @@
 .location {
-    background: $brown;
-    color: $white;
+  background: $brown;
+  color: $white;
 
+  .location_title {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-top: 40px;
+  }
+
+  .location_address {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .location {
     .location_title {
-        font-size: 2rem;
-        line-height: 1.2;
-        padding-top: 40px;
-
+      font-size: 3rem;
     }
 
     .location_address {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 20px;
-        padding: 40px 0;
+      font-size: 1.1rem;
+      line-height: 22px;
     }
+  }
 }

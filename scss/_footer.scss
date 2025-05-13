@@ -1,57 +1,98 @@
 footer {
-    background: $black;
-    width: 100%;
-    color: $white;
+  background: $black;
+  width: 100%;
+  color: $white;
+
+  .footercontact {
+    gap: 20px;
+    padding: 18% 0;
+    font-size: $font-s;
+
+    img {
+      width: 30%;
+    }
+
+    nav {
+      ul {
+        li {
+          a {
+            color: $white;
+            font-family: $main;
+            font-size: $font-s;
+            line-height: 10px;
+          }
+
+          a:hover {
+            color: $brown;
+          }
+        }
+      }
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    span {
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .mentions {
+    border: 1px solid $brown;
+    gap: 10px;
+    padding: 10px 0;
+    a {
+      color: $white;
+      font-family: $main;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      line-height: 1.2;
+    }
 
     .footercontact {
-        gap:20px;
-        padding: 18% 0;
-        font-size: 0.87rem;
+      padding: 10% 0;
+      gap: 20px;
 
-        img {
-            width: 30%;
+      img {
+        width: 12%;
+      }
 
-        }
-
-        nav {
-            ul {
-                li {
-                    a {
-                        color: $white;
-                        font-family: $main;
-                        font-size: 0.87rem;
-                        line-height: 10px;
-                    }
-
-                    a:hover {
-                        color: $brown;
-                    }
-                }
-            }
-        }
-        div {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        span {
-            i {
-                font-size: 1.5rem;
-            }
-        }
-        
+      .footercontact_reseaux {
+        display: flex;
+        flex-direction: column;
+      }
     }
-
     .mentions {
-        border: 1px solid $brown;
-        gap: 10px;
-        padding: 10px 0;
-        a {
-            color : $white;
-            font-family: $main;
-
-        }
-
+      a {
+        font-size: 0.7rem;
+        padding: 10px;
+      }
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    section {
+      justify-content: space-around;
+    }
+
+    .footercontact {
+      padding: 5% 10%;
+      gap: 5%;
+    }
+  }
 }

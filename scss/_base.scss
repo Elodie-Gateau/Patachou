@@ -1,67 +1,96 @@
 // Import des polices
 
 @font-face {
-    font-family: Poppins;
-    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+  font-family: Poppins;
+  src: url(/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
-    font-family: Poppins-Light;
-    src: url(/fonts/Poppins/Poppins-Light.ttf);
+  font-family: Poppins-Light;
+  src: url(/fonts/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {
-    font-family: Kaisei_Decol;
-    src: url(/fonts/Kaisei_Decol/KaiseiDecol-Medium.ttf);
+  font-family: Kaisei_Decol;
+  src: url(/fonts/Kaisei_Decol/KaiseiDecol-Medium.ttf);
 }
-
 
 body {
-    font-family: $main;
+  font-family: $main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+
+  h1,
+  h2,
+  h3 {
+    font-family: $title;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 70%;
+    padding: 30px 20px;
+  }
+
+  span {
+    display: block;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: $link;
+    cursor: pointer;
+  }
+
+  section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.7rem;
+    width: 100%;
 
-    h1, h2, h3 {
-        font-family: $title;
-        text-align: center;
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 18px;
     }
+  }
 
+  address {
+    font-style: normal;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1rem;
     h1 {
-        font-size: 1.8rem;
-        background-color: rgba(255, 255, 255, 0.9);
-        width: 70%;
-        padding: 30px 20px;
-    }
-
-    li {
-        list-style: none;
+      font-size: 3rem;
     }
 
     a {
-        text-decoration: none;
-        font-size: 0.8rem;
-        font-family: $link;
-        cursor: pointer;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    h1 {
+      width: 50%;
     }
 
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            line-height: 18px;
-        }
+    a {
+      font-size: 1rem;
     }
-
-    address {
-        font-style: normal;
-    }
-
+  }
 }
