@@ -1,51 +1,51 @@
-footer {
+.footer {
   background: $black;
   width: 100%;
   color: $white;
 
-  .footercontact {
+  &__container {
     gap: 20px;
     padding: 18% 0;
     font-size: $font-s;
-
-    img {
-      width: 30%;
-    }
-
-    nav {
-      ul {
-        li {
-          a {
-            color: $white;
-            font-family: $main;
-            font-size: $font-s;
-            line-height: 10px;
-          }
-
-          a:hover {
-            color: $brown;
-          }
-        }
-      }
-    }
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    span {
-      i {
-        font-size: 1.5rem;
-      }
-    }
   }
 
-  .mentions {
+  &__logo {
+    width: 30%;
+  }
+
+  &__nav {
+    &-link {
+      color: $white;
+      font-family: $main;
+      font-size: $font-s;
+      line-height: 10px;
+    }
+
+    &-link:hover {
+      color: $brown;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__phone,
+  &__hours-title,
+  &__socials-title {
+    padding-bottom: 20px;
+  }
+
+  .fa-brands {
+    font-size: 1.5rem;
+  }
+
+  &__legal {
     border: 1px solid $brown;
     gap: 10px;
     padding: 10px 0;
-    a {
+    &-link {
       color: $white;
       font-family: $main;
     }
@@ -53,8 +53,9 @@ footer {
 }
 
 @media (min-width: 768px) {
-  footer {
-    section {
+  .footer {
+    &__container,
+    &__legal {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -62,21 +63,22 @@ footer {
       line-height: 1.2;
     }
 
-    .footercontact {
+    &__container {
       padding: 10% 0;
       gap: 20px;
-
-      img {
-        width: 12%;
-      }
-
-      .footercontact_reseaux {
-        display: flex;
-        flex-direction: column;
-      }
     }
-    .mentions {
-      a {
+
+    &__logo {
+      width: 12%;
+    }
+
+    &__socials {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__legal {
+      &-link {
         font-size: 0.7rem;
         padding: 10px;
       }
@@ -85,14 +87,14 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  footer {
-    section {
+  .footer {
+    &__container {
       justify-content: space-around;
-    }
-
-    .footercontact {
       padding: 5% 10%;
       gap: 5%;
+    }
+    &__legal {
+      justify-content: center;
     }
   }
 }

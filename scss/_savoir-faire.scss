@@ -1,18 +1,18 @@
-#savoir-faire {
+.savoir-faire {
   height: auto;
   padding: 20% 0;
 
-  .citation {
+  &__citation {
     gap: 10px;
     line-height: 1.3;
     padding-bottom: 20%;
 
-    h2 {
+    &-title {
       font-size: 1.4rem;
     }
   }
 
-  .introduction {
+  &__introduction {
     border: 1px solid $black;
     font-size: 0.9rem;
     text-align: center;
@@ -21,19 +21,19 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #savoir-faire {
+  .savoir-faire {
     padding: 10% 0;
-    .citation {
+    &__citation {
       padding-bottom: 10%;
 
-      .citation_title {
+      &-title {
         font-size: 1.5rem;
       }
     }
-    .introduction {
+    &__introduction {
       margin: 0 5%;
 
-      .introduction_content {
+      &-content {
         font-size: 1rem;
         line-height: 1.2;
         padding: 20px 10%;
@@ -43,15 +43,15 @@
 }
 
 @media (min-width: 1024px) {
-  #savoir-faire {
+  .savoir-faire {
     padding: 8% 0;
-    .citation {
+    &__citation {
       padding-bottom: 8%;
     }
-    .introduction {
+    &__introduction {
       width: 60%;
 
-      .introduction_content {
+      &-content {
         padding: 20px 5%;
       }
     }

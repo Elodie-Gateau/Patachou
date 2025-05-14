@@ -8,7 +8,7 @@
   .hero {
     height: auto;
     padding: 8% 0;
-    .hero_title {
+    &__title {
       font-size: 2.5rem;
       line-height: 1.3;
     }

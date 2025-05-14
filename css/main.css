@@ -82,7 +82,7 @@ body address {
     font-size: 1rem;
   }
 }
-header {
+.header {
   height: auto;
   width: 100%;
   display: flex;
@@ -94,45 +94,45 @@ header {
   z-index: 10;
   padding: 20px;
 }
-header img {
+.header__logo {
   width: 30%;
 }
-header nav ul {
+.header__nav-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-header nav ul li a {
+.header__nav-link {
   text-transform: uppercase;
   color: #000000;
 }
-header nav ul li a:hover {
+.header__nav-link:hover {
   color: #ab864c;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  header {
+  .header {
     flex-direction: row;
     justify-content: space-around;
   }
-  header img {
+  .header__logo {
     width: 15%;
   }
-  header nav ul {
+  .header__nav-list {
     flex-direction: row;
     gap: 15px;
   }
 }
 @media (min-width: 1024px) {
-  header {
+  .header {
     flex-direction: row;
     justify-content: space-around;
   }
-  header img {
+  .header__logo {
     width: 10%;
   }
-  header nav ul {
+  .header__nav-list {
     flex-direction: row;
     gap: 3.5rem;
   }
@@ -148,24 +148,24 @@ header nav ul li a:hover {
     height: auto;
     padding: 8% 0;
   }
-  .hero .hero_title {
+  .hero__title {
     font-size: 2.5rem;
     line-height: 1.3;
   }
 }
-#savoir-faire {
+.savoir-faire {
   height: auto;
   padding: 20% 0;
 }
-#savoir-faire .citation {
+.savoir-faire__citation {
   gap: 10px;
   line-height: 1.3;
   padding-bottom: 20%;
 }
-#savoir-faire .citation h2 {
+.savoir-faire__citation-title {
   font-size: 1.4rem;
 }
-#savoir-faire .introduction {
+.savoir-faire__introduction {
   border: 1px solid #000000;
   font-size: 0.9rem;
   text-align: center;
@@ -173,63 +173,63 @@ header nav ul li a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #savoir-faire {
+  .savoir-faire {
     padding: 10% 0;
   }
-  #savoir-faire .citation {
+  .savoir-faire__citation {
     padding-bottom: 10%;
   }
-  #savoir-faire .citation .citation_title {
+  .savoir-faire__citation-title {
     font-size: 1.5rem;
   }
-  #savoir-faire .introduction {
+  .savoir-faire__introduction {
     margin: 0 5%;
   }
-  #savoir-faire .introduction .introduction_content {
+  .savoir-faire__introduction-content {
     font-size: 1rem;
     line-height: 1.2;
     padding: 20px 10%;
   }
 }
 @media (min-width: 1024px) {
-  #savoir-faire {
+  .savoir-faire {
     padding: 8% 0;
   }
-  #savoir-faire .citation {
+  .savoir-faire__citation {
     padding-bottom: 8%;
   }
-  #savoir-faire .introduction {
+  .savoir-faire__introduction {
     width: 60%;
   }
-  #savoir-faire .introduction .introduction_content {
+  .savoir-faire__introduction-content {
     padding: 20px 5%;
   }
 }
-#products {
+.products {
   background-color: #ab864c;
   color: #ffffff;
   padding: 20% 0;
 }
-#products .products_title {
+.products__title {
   font-size: 1.5rem;
   padding-bottom: 15px;
 }
-#products .products_item {
+.products__item {
   height: auto;
   padding: 10% 15px;
 }
-#products .products_item img {
+.products__item-image {
   width: 75%;
 }
-#products .products_item .products_item_title {
+.products__item-title {
   font-size: 1.2rem;
   padding: 20% 0;
 }
-#products .products_item .products_item_description {
+.products__item-description {
   font-size: 1.3em;
   text-align: center;
 }
-#products a {
+.products__link {
   display: inline-block;
   color: #ffffff;
   background-color: #ab864c;
@@ -241,62 +241,62 @@ header nav ul li a:hover {
   margin: 5% 10%;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  #products a {
+  .products__link {
     font-size: 1rem;
   }
 }
 @media (min-width: 1024px) {
-  #products a {
+  .products__link {
     padding: 12px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #products {
+  .products {
     padding: 10% 0;
   }
-  #products .products_title {
+  .products__title {
     font-size: 2.2rem;
     padding-bottom: 5%;
   }
-  #products .products_item {
+  .products__item {
     height: auto;
     padding: 20px 15px;
   }
-  #products .products_item img {
+  .products__item-image {
     width: 30%;
   }
-  #products .products_item .products_item_title {
+  .products__item-title {
     font-size: 1.5rem;
     padding: 10%;
   }
-  #products .products_item .products_item_description {
+  .products__item-description {
     font-size: 0.9rem;
     text-align: center;
     padding: 0 10%;
   }
 }
 @media (min-width: 1024px) {
-  #products {
+  .products {
     padding: 8% 0;
   }
-  #products .products_title {
+  .products__title {
     font-size: 2.2rem;
     padding-bottom: 0;
   }
-  #products .products_list {
+  .products__container {
     display: flex;
     flex-direction: row;
     width: 80%;
   }
-  #products a {
+  .products__link {
     margin: 0;
   }
-  #products .products_item {
+  .products__item {
     height: auto;
     padding: 8% 15px;
   }
-  #products .products_item img {
+  .products__item-image {
     width: 75%;
     height: 45%;
     -o-object-fit: contain;
@@ -306,24 +306,24 @@ header nav ul li a:hover {
 .history {
   padding: 20% 20px;
 }
-.history img:nth-child(1) {
+.history__image {
   width: 50%;
   padding: 30px 0;
 }
-.history .history_quotation img {
+.history__icon {
   width: 12%;
 }
-.history .history_quotation .history_title {
+.history__title {
   font-size: 2.1rem;
   line-height: 45px;
   padding-bottom: 10%;
 }
-.history .history_quotation .history_description {
+.history__description {
   font-size: 0.87rem;
   line-height: 18px;
   padding-bottom: 20px;
 }
-.history .history_quotation a {
+.history__link {
   display: inline-block;
   color: #ffffff;
   background-color: #ab864c;
@@ -335,12 +335,12 @@ header nav ul li a:hover {
   align-self: flex-start;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .history .history_quotation a {
+  .history__link {
     font-size: 1rem;
   }
 }
 @media (min-width: 1024px) {
-  .history .history_quotation a {
+  .history__link {
     padding: 12px;
   }
 }
@@ -349,12 +349,12 @@ header nav ul li a:hover {
   .history {
     padding: 10% 20px;
   }
-  .history .history_quotation img {
+  .history__icon {
     align-self: flex-start;
     width: 3rem;
     padding-bottom: 15px;
   }
-  .history .history_quotation .history_title {
+  .history__title {
     align-self: flex-start;
     padding-bottom: 5%;
   }
@@ -364,94 +364,94 @@ header nav ul li a:hover {
     flex-direction: row;
     padding: 10%;
   }
-  .history img:nth-child(1) {
+  .history__image {
     width: 40%;
     padding: 0 30px;
   }
-  .history .history_quotation {
+  .history__container {
     display: flex;
     flex-direction: column;
   }
-  .history .history_quotation img {
+  .history__icon {
     width: 8%;
     padding: 15px 0;
   }
-  .history .history_quotation .history_title {
+  .history__title {
     text-align: left;
     padding-bottom: 5%;
   }
 }
-.contactform {
+.contact-form {
   height: auto;
   padding: 0 20px;
 }
-.contactform hr {
+.contact-form__separator {
   border: 0.25px solid #000000;
   width: 85%;
   margin-bottom: 15%;
 }
-.contactform .contactform_title {
+.contact-form__title {
   font-size: 1.5rem;
   line-height: 30px;
 }
-.contactform .contactform_description {
+.contact-form__description {
   font-size: 0.87rem;
   line-height: 18px;
   padding: 10% 0;
 }
-.contactform form {
+.contact-form__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
 }
-.contactform form input {
+.contact-form__input {
   border: 2px solid rgb(170, 170, 170);
   height: 28px;
   width: 100%;
 }
-.contactform form label {
+.contact-form__field-label {
   font-size: 0.87rem;
   padding-top: 20px;
 }
-.contactform form .name {
+.contact-form__group {
   width: 100%;
 }
-.contactform form .name .name_title {
+.contact-form__group--name .contact-form__group-label {
   font-size: 0.87rem;
 }
-.contactform form .name input {
+.contact-form__group--name .contact-form__field {
   display: inline-block;
   width: 49%;
 }
-.contactform form .name label {
+.contact-form__group--name .contact-form__field .contact-form__field-label {
   display: inline-block;
   font-size: 0.65rem;
   width: 49%;
   padding-top: 0;
 }
-.contactform form textarea {
-  resize: both;
-  width: 100%;
-  height: 4.5rem;
-  border: 2px solid rgb(170, 170, 170);
-}
-.contactform form .checkbox {
+.contact-form__group--checkbox {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
   padding-top: 20px;
 }
-.contactform form .checkbox input[type=checkbox] {
+.contact-form__group--checkbox .contact-form__checkbox {
   width: 20px;
   height: 20px;
 }
-.contactform form .checkbox label {
+.contact-form__group--checkbox .contact-form__checkbox-label {
   padding-top: 0;
   line-height: 18px;
 }
-.contactform form input[type=submit] {
+.contact-form__textarea {
+  resize: both;
+  width: 100%;
+  height: 4.5rem;
+  border: 2px solid rgb(170, 170, 170);
+}
+.contact-form__submit {
   display: inline-block;
   color: #ffffff;
   background-color: #ab864c;
@@ -465,47 +465,46 @@ header nav ul li a:hover {
   height: auto;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .contactform form input[type=submit] {
+  .contact-form__submit {
     font-size: 1rem;
   }
 }
 @media (min-width: 1024px) {
-  .contactform form input[type=submit] {
+  .contact-form__submit {
     padding: 12px;
   }
 }
 
 @media (min-width: 768px) {
-  .contactform {
+  .contact-form {
     padding: 0 20px 10% 20px;
   }
-  .contactform .contactform_title {
+  .contact-form__title {
     align-self: flex-start;
     text-align: left;
     font-size: 2.2rem;
     line-height: 1.4;
   }
-  .contactform .contactform_description {
+  .contact-form__description {
     font-size: 0.87rem;
     line-height: 18px;
     padding: 5% 0;
   }
 }
 @media (min-width: 1024px) {
-  .contactform {
+  .contact-form {
     padding-bottom: 0;
   }
-  .contactform hr {
+  .contact-form hr {
     margin-bottom: 5%;
   }
-  .contactform .contactform_content {
+  .contact-form__container {
     padding: 5% 10%;
     display: flex;
     flex-direction: row;
     gap: 5%;
   }
-  .contactform .contactform_content .contactform_text,
-  .contactform .contactform_content form {
+  .contact-form__content, .contact-form__form {
     width: 50%;
   }
 }
@@ -513,97 +512,107 @@ header nav ul li a:hover {
   background: #ab864c;
   color: #ffffff;
 }
-.location .location_title {
+.location__title {
   font-size: 2rem;
   line-height: 1.2;
   padding-top: 40px;
 }
-.location .location_address {
+.location__address {
   text-align: center;
   font-size: 1rem;
   line-height: 20px;
   padding: 40px 0;
 }
+.location__map {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  display: block;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .location .location_title {
+  .location__title {
     font-size: 3rem;
   }
-  .location .location_address {
+  .location__address {
     font-size: 1.1rem;
     line-height: 22px;
   }
 }
-footer {
+.footer {
   background: #000000;
   width: 100%;
   color: #ffffff;
 }
-footer .footercontact {
+.footer__container {
   gap: 20px;
   padding: 18% 0;
   font-size: 0.87rem;
 }
-footer .footercontact img {
+.footer__logo {
   width: 30%;
 }
-footer .footercontact nav ul li a {
+.footer__nav-link {
   color: #ffffff;
   font-family: Poppins-Light, sans-serif;
   font-size: 0.87rem;
   line-height: 10px;
 }
-footer .footercontact nav ul li a:hover {
+.footer__nav-link:hover {
   color: #ab864c;
 }
-footer .footercontact div {
+.footer__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-footer .footercontact span i {
+.footer__phone, .footer__hours-title, .footer__socials-title {
+  padding-bottom: 20px;
+}
+.footer .fa-brands {
   font-size: 1.5rem;
 }
-footer .mentions {
+.footer__legal {
   border: 1px solid #ab864c;
   gap: 10px;
   padding: 10px 0;
 }
-footer .mentions a {
+.footer__legal-link {
   color: #ffffff;
   font-family: Poppins-Light, sans-serif;
 }
 
 @media (min-width: 768px) {
-  footer section {
+  .footer__container, .footer__legal {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     line-height: 1.2;
   }
-  footer .footercontact {
+  .footer__container {
     padding: 10% 0;
     gap: 20px;
   }
-  footer .footercontact img {
+  .footer__logo {
     width: 12%;
   }
-  footer .footercontact .footercontact_reseaux {
+  .footer__socials {
     display: flex;
     flex-direction: column;
   }
-  footer .mentions a {
+  .footer__legal-link {
     font-size: 0.7rem;
     padding: 10px;
   }
 }
 @media (min-width: 1024px) {
-  footer section {
+  .footer__container {
     justify-content: space-around;
-  }
-  footer .footercontact {
     padding: 5% 10%;
     gap: 5%;
+  }
+  .footer__legal {
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
