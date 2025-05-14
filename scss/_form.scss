@@ -25,31 +25,34 @@
     align-items: flex-start;
     width: 100%;
   }
+
   &__input {
-    border: 2px solid rgb(170, 170, 170);
+    border: 1px solid $black;
     height: 28px;
     width: 100%;
   }
 
   &__field-label {
     font-size: $font-s;
-    padding-top: 20px;
   }
 
   &__group {
     width: 100%;
+    padding-top: 20px;
     &--name {
       .contact-form__group-label {
         font-size: $font-s;
       }
+      .contact-form__row {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+      }
       .contact-form__field {
-        display: inline-block;
-        width: 49%;
+        width: 50%;
 
         .contact-form__field-label {
-          display: inline-block;
           font-size: $font-xs;
-          width: 49%;
           padding-top: 0;
         }
       }
@@ -58,7 +61,7 @@
       width: 100%;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: $gap-s;
       padding-top: 20px;
 
       .contact-form__checkbox {
@@ -67,6 +70,7 @@
       }
 
       .contact-form__checkbox-label {
+        font-size: $font-m;
         padding-top: 0;
         line-height: 18px;
       }
@@ -76,8 +80,8 @@
   &__textarea {
     resize: both;
     width: 100%;
-    height: 4.5rem;
-    border: 2px solid rgb(170, 170, 170);
+    height: 5rem;
+    border: 1px solid $black;
   }
   &__submit {
     @include button;

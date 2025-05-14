@@ -3,12 +3,12 @@
   padding: 20% 0;
 
   &__citation {
-    gap: 10px;
+    gap: $gap-s;
     line-height: 1.3;
     padding-bottom: 20%;
 
     &-title {
-      font-size: 1.4rem;
+      font-size: $font-xl;
     }
   }
 

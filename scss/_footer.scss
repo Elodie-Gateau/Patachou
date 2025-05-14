@@ -4,9 +4,11 @@
   color: $white;
 
   &__container {
-    gap: 20px;
+    gap: $gap-m;
     padding: 18% 0;
     font-size: $font-s;
+    display: flex;
+    flex-direction: column;
   }
 
   &__logo {
@@ -18,17 +20,11 @@
       color: $white;
       font-family: $main;
       font-size: $font-s;
-      line-height: 10px;
     }
 
     &-link:hover {
       color: $brown;
     }
-  }
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 
   &__phone,
@@ -43,7 +39,7 @@
 
   &__legal {
     border: 1px solid $brown;
-    gap: 10px;
+    gap: $gap-s;
     padding: 10px 0;
     &-link {
       color: $white;
@@ -65,7 +61,7 @@
 
     &__container {
       padding: 10% 0;
-      gap: 20px;
+      gap: $gap-m;
     }
 
     &__logo {
